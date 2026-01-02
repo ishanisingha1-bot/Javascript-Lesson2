@@ -1,17 +1,12 @@
 <!DOCTYPE html>
 <html>
-    <head></head>
     <body>
-        <button onclick="myfunction(5)">Execute JS function</button>
+        <h1 id="myH"></h1>
+        <p id="myP"></p>
         <script>
-            function myfunction(x,y)
-            {
-                if(y=== undefined){
-                    y=2;
-                }
-                document.write(x*y);
-            }
-
+            document.getElementBYID("myH").innerHTML = "Javascript Comments";
+            // my paragraph:
+            document.getElementBYID("myP").innerHTML = "My first paragraph";
         </script>
     </body>
 </html>
